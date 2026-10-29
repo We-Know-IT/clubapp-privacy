@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integritetspolicy – Club App</title>
+<meta name="theme-color" content="#18223A">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+<!-- Colours, fonts and gradients from the app's src/theme.ts (Figma "Club-App-Design"). The app has one dark look,
+     so the page has no light mode either. -->
+<style>
+  :root {
+    --navy: #18223A;
+    --ink: #050410;
+    --gold: #E1B625;
+    --gold-muted: #D4B039;
+    --text: #FFFFFF;
+    --muted: rgba(255, 255, 255, 0.7);
+    --border: #425EA0;
+    --pill: rgba(255, 255, 255, 0.1);
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--navy); }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--text);
+    font: 300 16px/1.6 Poppins, system-ui, sans-serif;
+    background: linear-gradient(135deg, #18223A 0%, #2D406D 25%, #425EA0 50%, #2D406D 75%, #18223A 100%) fixed;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; flex-direction: column; align-items: center; gap: 16px; margin-bottom: 32px; text-align: center; }
+  .logo { width: 72px; height: 72px; border-radius: 16px; background: #1C2A4C; padding: 6px; }
+  /* Text straight on the gradient is white: gold and 70 % white fall under 4.5:1 on its lighter #425EA0 middle */
+  .app-name { font-weight: 600; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text); margin: 0; }
+  .lang { display: flex; gap: 8px; }
+  .lang a {
+    min-height: 44px; display: inline-flex; align-items: center; padding: 0 20px; border-radius: 60px;
+    border: 1px solid var(--border); background: var(--ink); color: var(--text);
+    font-weight: 500; font-size: 14px; text-decoration: none;
+  }
+  .lang a:hover, .lang a:focus-visible { border-color: var(--gold); color: var(--gold); }
+  section { scroll-margin-top: 24px; }
+  section + section { margin-top: 56px; }
+  h1 { font-weight: 700; font-size: 26px; line-height: 1.25; margin: 0 0 4px; }
+  .meta { color: var(--text); font-size: 14px; margin: 0 0 20px; }
+  .card {
+    background: linear-gradient(180deg, #18223A 39%, #050410 100%);
+    border: 1px solid rgba(66, 94, 160, 0.5); border-radius: 16px; padding: 4px 20px 20px;
+  }
+  h2 {
+    font-weight: 500; font-size: 14px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--gold-muted);
+    margin: 24px 0 6px;
+  }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 20px; }
+  strong { font-weight: 600; }
+  a { color: var(--gold); }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 14px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px 10px 0; border-bottom: 1px solid rgba(66, 94, 160, 0.5); }
+  th { font-weight: 500; color: var(--muted); text-transform: uppercase; font-size: 12px; letter-spacing: 0.04em; }
+  @media (max-width: 480px) {
+    table, tbody, tr, td { display: block; }
+    tr:first-child { display: none; }
+    td { border: 0; padding: 0; }
+    td:first-child { font-weight: 500; padding-top: 12px; }
+    td:last-child { color: var(--muted); padding-bottom: 12px; border-bottom: 1px solid rgba(66, 94, 160, 0.5); }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <img class="logo" src="logo.png" alt="">
+  <p class="app-name">Club App</p>
+  <nav class="lang" aria-label="Språk / Language">
+    <a href="#sv" lang="sv">Svenska</a>
+    <a href="#en" lang="en">English</a>
+  </nav>
+</header>
+
+<!-- Svenska -->
+<section lang="sv" id="sv">
+<h1>Integritetspolicy</h1>
+<p class="meta">Club App · Gäller från 29 oktober 2026</p>
+<div class="card">
+
+<p>Club App är en app för ishockeyspelare där du skapar en spelarprofil. Här beskriver vi vilka personuppgifter appen behandlar, varför, och vilka rättigheter du har.</p>
+
+<h2>Personuppgiftsansvarig</h2>
+<p>SWEDENHOCKEY-FUTURE, org.nr 802534-3909, Ringvägen 23, 892 51 Domsjö. Frågor om dina uppgifter skickar du till <a href="mailto:info@clubapp.se">info@clubapp.se</a>.</p>
+
+<h2>Vilka uppgifter vi behandlar</h2>
+<table>
+  <tr><th>Uppgift</th><th>Varför</th></tr>
+  <tr><td>E-postadress och lösenord (lösenordet sparas bara i hashad form)</td><td>Logga in, bekräfta kontot och återställa lösenordet</td></tr>
+  <tr><td>För- och efternamn, födelsedatum</td><td>Visa din profil. Födelsedatumet används för att kontrollera att du är minst 13 år och för att föreslå åldersnivå</td></tr>
+  <tr><td>Profilbild (frivillig)</td><td>Visa på din profil</td></tr>
+  <tr><td>Hockeyuppgifter: klubb, moderklubb, lag, åldersnivå, position, skjuter, spelstil, längd och vikt</td><td>Visa din spelarprofil och ditt spelar-CV</td></tr>
+  <tr><td>Utrustning, anteckningar, styrkor och saker att förbättra (frivilligt)</td><td>Visa på din profil</td></tr>
+</table>
+<p>Vi samlar inte in plats, kontakter eller annonsidentiteter, och appen innehåller ingen reklam eller spårning för analys. Vi frågar aldrig efter personnummer.</p>
+
+<h2>Rättslig grund</h2>
+<p>Vi behandlar uppgifterna för att kunna tillhandahålla appen som du har valt att använda (avtal, artikel 6.1 b i dataskyddsförordningen, GDPR). Du måste vara minst 13 år för att skapa ett konto.</p>
+
+<h2>Vem som ser dina uppgifter</h2>
+<p>Bara du ser din profil i appen. Vi säljer inte dina uppgifter och delar dem inte med andra för deras egna syften. Om du själv delar ditt spelar-CV bestämmer du vem som får det.</p>
+<p>Vi använder dessa leverantörer (personuppgiftsbiträden) för att driva appen:</p>
+<ul>
+  <li>Supabase: databas, inloggning och lagring av profilbilder. Uppgifterna lagras i EU, i Stockholm.</li>
+  <li>Resend: skickar e-post med bekräftelsekoder.</li>
+  <li>Expo: levererar appuppdateringar. Tar inte emot dina profiluppgifter.</li>
+</ul>
+<p>Om en leverantör behandlar uppgifter utanför EU/EES sker det med stöd av EU-kommissionens standardavtalsklausuler eller motsvarande skydd.</p>
+
+<h2>Hur länge vi sparar uppgifterna</h2>
+<p>Så länge du har ett konto. När du raderar kontot raderas profilen, alla åldersnivåer och profilbilden direkt.</p>
+
+<h2 id="radera">Radera ditt konto i Club App</h2>
+<p>I appen: <strong>Inställningar → Radera konto</strong>. Kan du inte logga in, skicka ett mejl från kontots e-postadress till <a href="mailto:info@clubapp.se">info@clubapp.se</a> så raderar vi kontot inom 30 dagar.</p>
+
+<h2>Dina rättigheter</h2>
+<p>Du har rätt att få veta vilka uppgifter vi har om dig, att få fel rättade, att få uppgifterna raderade och att få ut dem i ett maskinläsbart format. De flesta uppgifterna kan du själv se och ändra under Redigera i appen. Kontakta oss för övrigt. Du kan också klaga hos Integritetsskyddsmyndigheten (<a href="https://www.imy.se">imy.se</a>).</p>
+
+<h2>Ändringar</h2>
+<p>Om policyn ändras uppdaterar vi den här sidan och datumet högst upp.</p>
+</div>
+</section>
+
+<!-- English -->
+<section lang="en" id="en">
+<h1>Privacy policy</h1>
+<p class="meta">Club App · Effective from 29 October 2026</p>
+<div class="card">
+
+<p>Club App is an app for ice hockey players where you create a player profile. This page explains what personal data the app processes, why, and what your rights are.</p>
+
+<h2>Data controller</h2>
+<p>SWEDENHOCKEY-FUTURE, reg. no. 802534-3909, Ringvägen 23, 892 51 Domsjö, Sweden. Send questions about your data to <a href="mailto:info@clubapp.se">info@clubapp.se</a>.</p>
+
+<h2>What data we process</h2>
+<table>
+  <tr><th>Data</th><th>Why</th></tr>
+  <tr><td>Email address and password (the password is only stored hashed)</td><td>Signing in, confirming the account and resetting the password</td></tr>
+  <tr><td>First and last name, date of birth</td><td>Showing your profile. The date of birth checks that you are at least 13 and suggests your age level</td></tr>
+  <tr><td>Profile picture (optional)</td><td>Showing on your profile</td></tr>
+  <tr><td>Hockey details: club, home club, team, age level, position, shoots, playing style, height and weight</td><td>Showing your player profile and player CV</td></tr>
+  <tr><td>Equipment, notes, strengths and things to improve (optional)</td><td>Showing on your profile</td></tr>
+</table>
+<p>We do not collect location, contacts or advertising IDs, and the app has no ads or analytics tracking. We never ask for a personal identity number.</p>
+
+<h2>Legal basis</h2>
+<p>We process the data to provide the app you have chosen to use (contract, Article 6(1)(b) GDPR). You must be at least 13 to create an account.</p>
+
+<h2>Who sees your data</h2>
+<p>Only you see your profile in the app. We do not sell your data or share it with others for their own purposes. If you share your player CV, you decide who receives it.</p>
+<p>We use these providers (data processors) to run the app:</p>
+<ul>
+  <li>Supabase: database, sign-in and profile picture storage. Data is stored in the EU, in Stockholm, Sweden.</li>
+  <li>Resend: sends emails with confirmation codes.</li>
+  <li>Expo: delivers app updates. Does not receive your profile data.</li>
+</ul>
+<p>Where a provider processes data outside the EU/EEA, this is covered by the EU Commission's standard contractual clauses or equivalent safeguards.</p>
+
+<h2>How long we keep data</h2>
+<p>For as long as you have an account. When you delete your account, your profile, all age levels and your profile picture are deleted at once.</p>
+
+<h2 id="delete">Delete your Club App account</h2>
+<p>In the app: <strong>Settings → Delete account</strong>. If you cannot sign in, email <a href="mailto:info@clubapp.se">info@clubapp.se</a> from the account's email address and we will delete the account within 30 days.</p>
+
+<h2>Your rights</h2>
+<p>You have the right to know what data we hold about you, to have errors corrected, to have your data deleted and to receive it in a machine-readable format. You can see and change most of it yourself under Edit in the app; contact us for anything else. You can also complain to the Swedish Authority for Privacy Protection (<a href="https://www.imy.se/en/">imy.se</a>).</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, we update this page and the date at the top.</p>
+</div>
+</section>
+
+</main>
+</body>
+</html>
